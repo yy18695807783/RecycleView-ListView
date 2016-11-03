@@ -1,0 +1,120 @@
+package com.atguigu.myMediaer.fragments;
+
+
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+
+import com.atguigu.myMediaer.R;
+import com.atguigu.myMediaer.adapter.RecycleAdapter;
+import com.atguigu.myMediaer.doman.BaiSiBean;
+import com.atguigu.myMediaer.fragmentbase.BaseFragment;
+import com.atguigu.myMediaer.utils.Constants;
+import com.atguigu.myMediaer.utils.LogUtil;
+import com.cjj.MaterialRefreshLayout;
+import com.google.gson.Gson;
+
+import org.xutils.common.Callback;
+import org.xutils.http.RequestParams;
+import org.xutils.x;
+
+import java.util.List;
+
+/**
+ * Created by 颜银 on 2016/9/28.
+ * QQ:443098360
+ * 微信：y443098360
+ */
+public class RecyclerViewFragment extends BaseFragment {
+//    private TextView textView;
+    private RecyclerView rv_recyclerView;
+    private List<BaiSiBean.ListBean> list;
+    private RecycleAdapter adapter;
+    private MaterialRefreshLayout refresh;
+
+    @Override
+    public View initView() {
+        LogUtil.e("RecyclerViewUI创建了");
+//        textView = new TextView(context);
+//        textView.setTextSize(25);
+//        textView.setGravity(Gravity.CENTER);
+//        textView.setTextColor(Color.RED);
+        View view = View.inflate(context, R.layout.fragment_recyclerviewfrangment, null);
+        rv_recyclerView = (RecyclerView) view.findViewById(R.id.rv_recyclerView);
+
+        return view;
+    }
+
+    @Override
+    public void initData() {
+        super.initData();
+        LogUtil.e("RecyclerView数据绑定了");
+//        textView.setText("RecyclerView");
+        getDataFromNet();
+    }
+    private void getDataFromNet() {
+        RequestParams params = new RequestParams(Constants.BAI_SI_BU_DE_JIE);
+        x.http().get(params, new Callback.CommonCallback<String>() {
+
+            /**
+             * 当请求成功的时候回调
+             * @param result
+             */
+            @Override
+            public void onSuccess(String result) {
+                LogUtil.e("请求数据成功==" + result);
+                //数据缓存
+//                CacheUtils.putString(context, Constants.BAI_SI_BU_DE_JIE, result);
+                //解析数据
+//                processData(result);
+                list = parsedJson(result);
+                rv_recyclerView.setLayoutManager(new LinearLayoutManager(context));
+                adapter = new RecycleAdapter(context, list);
+                rv_recyclerView.setAdapter(adapter);
+                //把下拉刷新的状态还原
+                refresh.finishRefresh();
+            }
+
+            /**
+             *请求失败的时候回调
+             * @param ex
+             * @param isOnCallback
+             */
+            @Override
+            public void onError(Throwable ex, boolean isOnCallback) {
+                LogUtil.e("请求数据失败==" + ex);
+
+            }
+
+            /**
+             * 当请求取消了的时候回调
+             * @param cex
+             */
+            @Override
+            public void onCancelled(CancelledException cex) {
+                LogUtil.e("onCancelled==" + cex.getMessage());
+            }
+
+            /**
+             * 请求完成的时候
+             */
+            @Override
+            public void onFinished() {
+                LogUtil.e("onFinished==请求完成的时候");
+
+            }
+        });
+    }
+    /**
+     * 解析json数据和显示数据
+     *
+     * @param json
+     */
+    private List<BaiSiBean.ListBean> parsedJson(String json) {
+        Gson gson = new Gson();
+        BaiSiBean baiSiBean = gson.fromJson(json,BaiSiBean.class);
+        List<BaiSiBean.ListBean> baiSiBeans =  baiSiBean.getList();
+        LogUtil.e("baiSiBeans = " + baiSiBeans.toString());
+        return baiSiBeans;
+    }
+}

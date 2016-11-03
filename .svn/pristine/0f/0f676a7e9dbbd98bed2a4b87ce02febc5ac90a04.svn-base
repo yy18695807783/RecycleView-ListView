@@ -1,0 +1,298 @@
+[
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_focused_holo.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_tab_netaudio_press.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\ic_tab_netaudio_press.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\user.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\user.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_item_right_more_normal.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\ic_item_right_more_normal.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\shenhe_ding_pic_an.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\shenhe_ding_pic_an.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_topbanner_game.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\ic_topbanner_game.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_clear_mtrl_alpha.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\posts_detail_forward_night.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\posts_detail_forward_night.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_tab_audio_press.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\ic_tab_audio_press.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_sousuokuang_press.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\ic_sousuokuang_press.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_tab_netvideo.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\ic_tab_netvideo.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_sousuokuang.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\ic_sousuokuang.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bg_item.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\bg_item.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\video_default_icon.jpg",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\video_default_icon.jpg"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_tab_netvideo_press.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\ic_tab_netvideo_press.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\shenhe_ding_pic.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\shenhe_ding_pic.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\label_icon.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\label_icon.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_topbanner_logo.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\ic_topbanner_logo.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_topbanner_record.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\ic_topbanner_record.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\shenhe_cai_pic_night.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\shenhe_cai_pic_night.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\top_comment.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\top_comment.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_half_black_36dp.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_tab_video_press.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\ic_tab_video_press.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_tab_video.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\ic_tab_video.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_tab_audio.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\ic_tab_audio.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\shenhe_cai_pic_an.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\shenhe_cai_pic_an.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bg_activities_item_end_transparent.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\bg_activities_item_end_transparent.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_item_right_more_press.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\ic_item_right_more_press.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\login_icon.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\login_icon.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_tab_netaudio.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\src\\main\\res\\drawable-hdpi\\ic_tab_netaudio.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png",
+        "source": "D:\\as_workspace\\MyMediaer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
+    }
+]

@@ -1,0 +1,40 @@
+package com.atguigu.myMediaer.adapter;
+
+import android.content.Context;
+import android.support.v7.widget.RecyclerView;
+import android.view.ViewGroup;
+
+import com.atguigu.myMediaer.doman.BaiSiBean;
+
+import java.util.List;
+
+/**
+ * Created by 颜银 on 2016/10/13.
+ * QQ:443098360
+ * 微信：y443098360
+ * 作用：
+ */
+public class RecycleAdapter extends RecyclerView.Adapter{
+
+    private List<BaiSiBean.ListBean> baiSiBeans;
+    private Context context;
+    public RecycleAdapter(Context context, List<BaiSiBean.ListBean> baiSiBeans) {
+        this.baiSiBeans = baiSiBeans;
+        this.context = context;
+    }
+
+    @Override
+    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        return null;
+    }
+
+    @Override
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return 0;
+    }
+}

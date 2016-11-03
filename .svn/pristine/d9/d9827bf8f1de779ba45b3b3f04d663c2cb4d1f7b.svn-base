@@ -1,0 +1,20 @@
+package com.atguigu.myMediaer;
+
+import android.app.Application;
+
+import org.xutils.x;
+
+/**
+ * Created by 颜银 on 2016/10/7.
+ * QQ:443098360
+ * 微信：y443098360
+ */
+public class MyApplication extends Application {
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        //初始化xUtils3
+        x.Ext.init(this);
+        x.Ext.setDebug(true);//上线后要设置false
+    }
+}

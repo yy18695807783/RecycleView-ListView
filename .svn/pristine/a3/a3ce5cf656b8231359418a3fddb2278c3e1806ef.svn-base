@@ -1,0 +1,187 @@
+package com.atguigu.myMediaer.fragments;
+
+import android.view.View;
+import android.widget.ListView;
+
+import com.atguigu.myMediaer.R;
+import com.atguigu.myMediaer.adapter.NetAudioFragmentAdapter;
+import com.atguigu.myMediaer.doman.BaiSiBean;
+import com.atguigu.myMediaer.fragmentbase.BaseFragment;
+import com.atguigu.myMediaer.utils.CacheUtils;
+import com.atguigu.myMediaer.utils.Constants;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.xutils.common.Callback;
+import org.xutils.common.util.LogUtil;
+import org.xutils.http.RequestParams;
+import org.xutils.x;
+
+import java.util.ArrayList;
+
+/**
+ * Created by 颜银 on 2016/10/13.
+ * QQ:443098360
+ * 微信：y443098360
+ * 作用：
+ */
+public class NetAudioFragment extends BaseFragment {
+    //    private TextView textView;
+    private ListView lv_audio;
+
+    private ArrayList<BaiSiBean> baiSiBeans;
+    private NetAudioFragmentAdapter adapter;
+
+    @Override
+    public View initView() {
+        LogUtil.e("网络音乐UI创建了");
+//        textView = new TextView(context);
+//        textView.setTextSize(25);
+//        textView.setGravity(Gravity.CENTER);
+//        textView.setTextColor(Color.RED);
+        View view = View.inflate(context, R.layout.fragment_net_audio, null);
+        lv_audio = (ListView) view.findViewById(R.id.lv_audio);
+
+        return view;
+    }
+
+    @Override
+    public void initData() {
+        super.initData();
+        LogUtil.e("网络音乐数据绑定了");
+//        textView.setText("网络音乐");
+        getDataFromNet();
+    }
+    private void getDataFromNet() {
+        RequestParams params = new RequestParams(Constants.BAI_SI_BU_DE_JIE);
+        x.http().get(params, new Callback.CommonCallback<String>() {
+            /**
+             * 当请求成功的时候回调
+             * @param result
+             */
+            @Override
+            public void onSuccess(String result) {
+                LogUtil.e("请求数据成功==" + result);
+                //数据缓存
+                CacheUtils.putString(context, Constants.NET_VIDEO_URL, result);
+                //解析数据
+                processData(result);
+            }
+
+            /**
+             *请求失败的时候回调
+             * @param ex
+             * @param isOnCallback
+             */
+            @Override
+            public void onError(Throwable ex, boolean isOnCallback) {
+                LogUtil.e("请求数据失败==" + ex);
+            }
+
+            /**
+             * 当请求取消了的时候回调
+             * @param cex
+             */
+            @Override
+            public void onCancelled(CancelledException cex) {
+                LogUtil.e("onCancelled==" + cex.getMessage());
+            }
+
+            /**
+             * 请求完成的时候
+             */
+            @Override
+            public void onFinished() {
+                LogUtil.e("onFinished==请求完成的时候");
+            }
+        });
+    }
+    /**
+     * 解析json数据和显示数据
+     *
+     * @param json
+     */
+    private void processData(String json) {
+        baiSiBeans = parsedJson(json);
+        LogUtil.e(baiSiBeans.toString());
+        if (baiSiBeans != null && baiSiBeans.size() > 0) {
+//            //有数据
+            adapter = new NetAudioFragmentAdapter(context,baiSiBeans);
+            lv_audio.setAdapter(adapter);
+        } else {
+//            //没有数据
+//            tv_nodata.setVisibility(View.VISIBLE);
+//            tv_nodata.setText("请求网络失败/...");
+        }
+//        progressbar.setVisibility(View.GONE);
+//        //把下拉刷新的状态还原
+//        refresh.finishRefresh();
+    }private ArrayList<BaiSiBean> parsedJson(String json) {
+        ArrayList<BaiSiBean> baiSiBeans = new ArrayList<>();
+
+        try {
+            JSONObject jsonObject = new JSONObject(json);
+            //optJSONArray 解析比 getJSONArray好
+            JSONArray jsonArr = jsonObject.optJSONArray("list");
+            if (jsonArr != null && jsonArr.length() > 0) {
+                for (int i = 0; i < jsonArr.length(); i++) {
+                    JSONObject item = (JSONObject) jsonArr.get(i);
+                    if (item != null) {
+                        //创建类
+                        BaiSiBean baiSiBean = new BaiSiBean();
+                        //慢慢整理数据
+                        int status = item.optInt("status");
+                        baiSiBean.setStatus(status);
+                        String comment = item.optString("comment");
+                        baiSiBean.setComment(comment);
+                        String bookmark = item.optString("bookmark");
+                        baiSiBean.setBookmark(bookmark);
+                        String text = item.optString("text");
+                        baiSiBean.setText(text);
+                        String up = item.optString("up");
+                        baiSiBean.setUp(up);
+                        String share_url = item.optString("share_url");
+                        baiSiBean.setShare_url(share_url);
+                        int down = item.optInt("down");
+                        baiSiBean.setStatus(down);
+                        int forward = item.optInt("forward");
+                        baiSiBean.setStatus(forward);
+
+                        BaiSiBean.UBean u = new BaiSiBean.UBean();
+                        LogUtil.e(u.toString());
+                        baiSiBean.setU(u);
+
+                        String passtime = item.optString("passtime");
+                        baiSiBean.setUp(passtime);
+
+                        BaiSiBean.VideoBean video = new BaiSiBean.VideoBean();
+                        baiSiBean.setVideo(video);
+
+                        String type = item.optString("type");
+                        baiSiBean.setUp(type);
+                        String id = item.optString("id");
+                        baiSiBean.setUp(id);
+
+//                        JSONArray jsonArr1 = jsonObject.optJSONArray("tags");
+//                        if (jsonArr1 != null && jsonArr1.length() > 0) {
+//                            for (int j = 0; j < jsonArr1.length(); j++) {
+//
+//                            }
+//                        }
+
+
+
+                        //添加到集合中去
+                        baiSiBeans.add(baiSiBean);
+                    }
+                }
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        LogUtil.e("baiSiBeans = " + baiSiBeans );
+        return baiSiBeans;
+    }
+
+}

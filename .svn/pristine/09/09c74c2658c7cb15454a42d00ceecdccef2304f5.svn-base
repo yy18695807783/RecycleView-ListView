@@ -1,0 +1,117 @@
+package com.atguigu.myMediaer.fragments;
+
+import android.view.View;
+import android.widget.ListView;
+
+import com.atguigu.myMediaer.R;
+import com.atguigu.myMediaer.adapter.NetAudioFragmentAdapter;
+import com.atguigu.myMediaer.doman.BaiSiBean;
+import com.atguigu.myMediaer.fragmentbase.BaseFragment;
+import com.atguigu.myMediaer.utils.LogUtil;
+import com.google.gson.Gson;
+
+import org.xutils.common.Callback;
+import org.xutils.http.RequestParams;
+import org.xutils.x;
+
+import java.util.List;
+
+/**
+ * Created by 颜银 on 2016/10/13.
+ * QQ:443098360
+ * 微信：y443098360
+ * 作用：
+ */
+public class NetAudioFragment extends BaseFragment {
+    //    private TextView textView;
+
+
+    private ListView lv_audio;
+
+    private List<BaiSiBean.ListBean> list;
+    private NetAudioFragmentAdapter adapter;
+
+    @Override
+    public View initView() {
+        LogUtil.e("网络音乐UI创建了");
+//        textView = new TextView(context);
+//        textView.setTextSize(25);
+//        textView.setGravity(Gravity.CENTER);
+//        textView.setTextColor(Color.RED);
+        View view = View.inflate(context, R.layout.fragment_net_audio, null);
+        lv_audio = (ListView) view.findViewById(R.id.lv_audio);
+
+        return view;
+    }
+
+    @Override
+    public void initData() {
+        super.initData();
+        LogUtil.e("网络音乐数据绑定了");
+//        textView.setText("网络音乐");
+        getDataFromNet();
+    }
+    private void getDataFromNet() {
+//        RequestParams params = new RequestParams(Constants.BAI_SI_BU_DE_JIE);
+        RequestParams params = new RequestParams("http://s.budejie.com/topic/list/jingxuan/1/budejie-android-6.2.8/0-20.json?market=baidu&udid=863425026599592&appname=baisibudejie&os=4.2.2&client=android&visiting=&mac=98%3A6c%3Af5%3A4b%3A72%3A6d&ver=6.2.8");
+        x.http().get(params, new Callback.CommonCallback<String>() {
+
+            /**
+             * 当请求成功的时候回调
+             * @param result
+             */
+            @Override
+            public void onSuccess(String result) {
+                LogUtil.e("请求数据成功==" + result);
+                //数据缓存
+//                CacheUtils.putString(context, Constants.BAI_SI_BU_DE_JIE, result);
+                //解析数据
+//                processData(result);
+                list = parsedJson(result);
+                adapter = new NetAudioFragmentAdapter(context,list);
+                lv_audio.setAdapter(adapter);
+            }
+
+            /**
+             *请求失败的时候回调
+             * @param ex
+             * @param isOnCallback
+             */
+            @Override
+            public void onError(Throwable ex, boolean isOnCallback) {
+                LogUtil.e("请求数据失败==" + ex);
+
+            }
+
+            /**
+             * 当请求取消了的时候回调
+             * @param cex
+             */
+            @Override
+            public void onCancelled(CancelledException cex) {
+                LogUtil.e("onCancelled==" + cex.getMessage());
+            }
+
+            /**
+             * 请求完成的时候
+             */
+            @Override
+            public void onFinished() {
+                LogUtil.e("onFinished==请求完成的时候");
+            }
+        });
+    }
+    /**
+     * 解析json数据和显示数据
+     *
+     * @param json
+     */
+    private List<BaiSiBean.ListBean> parsedJson(String json) {
+        Gson gson = new Gson();
+        BaiSiBean baiSiBean = gson.fromJson(json,BaiSiBean.class);
+        List<BaiSiBean.ListBean> baiSiBeans =  baiSiBean.getList();
+        LogUtil.e("baiSiBeans = " + baiSiBeans.toString());
+        return baiSiBeans;
+    }
+
+}

@@ -1,0 +1,167 @@
+package com.atguigu.myMediaer.adapter;
+
+import android.content.Context;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+
+import com.atguigu.myMediaer.doman.BaiSiBean;
+import com.atguigu.myMediaer.utils.LogUtil;
+
+import java.util.ArrayList;
+
+/**
+ * Created by 颜银 on 2016/10/12.
+ * QQ:443098360
+ * 微信：y443098360
+ * 作用：
+ */
+public class NetAudioFragmentAdapter extends BaseAdapter {
+
+    /**
+     * 视频
+     */
+    private static final int TYPE_VIDEO = 0;
+
+    /**
+     * 图片
+     */
+    private static final int TYPE_IMAGE = 1;
+
+    /**
+     * 文字
+     */
+    private static final int TYPE_TEXT = 2;
+
+    /**
+     * GIF图片
+     */
+    private static final int TYPE_GIF = 3;
+
+
+    /**
+     * 软件推广
+     */
+    private static final int TYPE_AD = 4;
+    private ArrayList<BaiSiBean> baiSiBeans;
+    private Context context;
+    public NetAudioFragmentAdapter(Context context, ArrayList<BaiSiBean> baiSiBeans) {
+        this.baiSiBeans = baiSiBeans;
+        this.context = context;
+    }
+
+    @Override
+    public int getCount() {
+        return baiSiBeans == null?0:baiSiBeans.size();
+    }
+
+    @Override
+    public Object getItem(int position) {
+        return baiSiBeans.get(position);
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return 0;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+
+        int itemViewType = getItemViewType(position);//当前itme是什么类型
+        ViewHolder viewHolder;
+        if (convertView == null) {
+            viewHolder = new ViewHolder();
+//            convertView = initTypeView(convertView, itemViewType, viewHolder);
+//
+//            initCommonView(convertView, itemViewType, viewHolder);
+
+            convertView.setTag(viewHolder);
+        } else {
+            viewHolder = (ViewHolder) convertView.getTag();
+        }
+
+        //绑定数据
+//        bindData(position, itemViewType, viewHolder);
+
+
+        return convertView;
+    }
+    static class ViewHolder {
+//        //user_info
+//        ImageView iv_headpic;
+//        TextView tv_name;
+//        TextView tv_time_refresh;
+//        ImageView iv_right_more;
+//        //bottom
+//        ImageView iv_video_kind;
+//        TextView tv_video_kind_text;
+//        TextView tv_shenhe_ding_number;
+//        TextView tv_shenhe_cai_number;
+//        TextView tv_posts_number;
+//        LinearLayout ll_download;
+//
+//        //中间公共部分 -所有的都有
+//        TextView tv_context;
+//
+//
+//        //Video
+////        TextView tv_context;
+//        TextView tv_play_nums;
+//        TextView tv_video_duration;
+//        ImageView iv_commant;
+//        TextView tv_commant_context;
+//        JCVideoPlayer jcv_videoplayer;
+//
+//        //Image
+//        ImageView iv_image_icon;
+////        TextView tv_context;
+//
+//        //Text
+////        TextView tv_context;
+//
+//        //Gif
+//        GifImageView iv_image_gif;
+////        TextView tv_context;
+//
+//        //软件推广
+//        Button btn_install;
+////        TextView iv_image_icon;
+//        //TextView tv_context;
+
+
+    }
+
+    //返回总类型数据
+    @Override
+    public int getViewTypeCount() {
+        return 5;
+    }
+
+    /**
+     * 当前item是什么类型
+     * @param position
+     * @return
+     */
+    @Override
+    public int getItemViewType(int position) {
+        int itemViewType = -1;
+        //根据位置，从列表中得到一个数据对象
+        BaiSiBean listEntity = baiSiBeans.get(position);
+        String type = listEntity.getType();//得到类型
+        LogUtil.e("type===" + type);
+        if ("video".equals(type)) {
+            itemViewType = TYPE_VIDEO;
+        } else if ("image".equals(type)) {
+            itemViewType = TYPE_IMAGE;
+        } else if ("text".equals(type)) {
+            itemViewType = TYPE_TEXT;
+        } else if ("gif".equals(type)) {
+            itemViewType = TYPE_GIF;
+        } else {
+            itemViewType = TYPE_AD;//广播
+        }
+        return itemViewType;
+    }
+
+}

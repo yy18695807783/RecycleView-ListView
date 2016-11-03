@@ -1,0 +1,538 @@
+package com.atguigu.myMediaer.doman;
+
+import java.util.List;
+
+/**
+ * Created by 颜银 on 2016/10/12.
+ * QQ:443098360
+ * 微信：y443098360
+ * 作用：
+ */
+public class BaiSiBean {
+
+    /**
+     * status : 4   地位；状态；情形；重要身份
+     * comment : 17
+     * top_comments : [{"voicetime":0,"status":0,"cmt_type":"text","precid":0,"content":"放屁的非致命性武器，有心脏病，高血压的人被击中必死无疑。","like_count":11,"u":{"header":["http://wimg.spriteapp.cn/profile/large/2016/04/07/57062b798862b_mini.jpg","http://dimg.spriteapp.cn/profile/large/2016/04/07/57062b798862b_mini.jpg"],"sex":"m","uid":"17365611","name":"瀧洺"},"preuid":0,"passtime":"2016-10-11 22:57:42","voiceuri":"","id":65989275}]
+     * tags : [{"id":18910,"name":"hx"},{"id":56,"name":"创意"},{"id":263,"name":"科技"}]
+     * bookmark : 13
+     * text : 无需致命也能制服敌人的电击枪！被击中瞬间，越强壮的反而倒得更快
+     * up : 322
+     * share_url : http://a.f.budejie.com/share/21283041.html?wx.qq.com
+     * down : 62
+     * forward : 54
+     * u : {"header":["http://wimg.spriteapp.cn/profile/large/2016/08/04/57a31c41ee597_mini.jpg","http://dimg.spriteapp.cn/profile/large/2016/08/04/57a31c41ee597_mini.jpg"],"is_v":true,"uid":"18750799","is_vip":false,"name":"dp神墨"}
+     * passtime : 2016-10-12 20:15:01
+     * video : {"playfcount":769,"height":360,"width":640,"video":["http://dvideo.spriteapp.cn/video/2016/1011/aa677f6c-8fbc-11e6-8e66-d4ae5296039d_wpd.mp4","http://wvideo.spriteapp.cn/video/2016/1011/aa677f6c-8fbc-11e6-8e66-d4ae5296039d_wpd.mp4"],"download":["http://dvideo.spriteapp.cn/video/2016/1011/aa677f6c-8fbc-11e6-8e66-d4ae5296039d_wpc.mp4","http://wvideo.spriteapp.cn/video/2016/1011/aa677f6c-8fbc-11e6-8e66-d4ae5296039d_wpc.mp4"],"duration":255,"playcount":15545,"thumbnail":["http://wimg.spriteapp.cn/picture/2016/1011/aa677f6c-8fbc-11e6-8e66-d4ae5296039d_wpd_65.jpg","http://dimg.spriteapp.cn/picture/2016/1011/aa677f6c-8fbc-11e6-8e66-d4ae5296039d_wpd_65.jpg"],"thumbnail_small":["http://wimg.spriteapp.cn/crop/150x150/picture/2016/1011/aa677f6c-8fbc-11e6-8e66-d4ae5296039d_wpd_65.jpg","http://dimg.spriteapp.cn/crop/150x150/picture/2016/1011/aa677f6c-8fbc-11e6-8e66-d4ae5296039d_wpd_65.jpg"]}
+     * type : video
+     * id : 21283041
+     */
+
+    private int status;
+    private String comment;
+    private String bookmark;
+    private String text;
+    private String up;
+    private String share_url;
+    private int down;
+    private int forward;
+    /**
+     * header : ["http://wimg.spriteapp.cn/profile/large/2016/08/04/57a31c41ee597_mini.jpg","http://dimg.spriteapp.cn/profile/large/2016/08/04/57a31c41ee597_mini.jpg"]
+     * is_v : true
+     * uid : 18750799
+     * is_vip : false
+     * name : dp神墨
+     */
+
+    private UBean u;
+    private String passtime;
+    /**
+     * playfcount : 769
+     * height : 360
+     * width : 640
+     * video : ["http://dvideo.spriteapp.cn/video/2016/1011/aa677f6c-8fbc-11e6-8e66-d4ae5296039d_wpd.mp4","http://wvideo.spriteapp.cn/video/2016/1011/aa677f6c-8fbc-11e6-8e66-d4ae5296039d_wpd.mp4"]
+     * download : ["http://dvideo.spriteapp.cn/video/2016/1011/aa677f6c-8fbc-11e6-8e66-d4ae5296039d_wpc.mp4","http://wvideo.spriteapp.cn/video/2016/1011/aa677f6c-8fbc-11e6-8e66-d4ae5296039d_wpc.mp4"]
+     * duration : 255
+     * playcount : 15545
+     * thumbnail : ["http://wimg.spriteapp.cn/picture/2016/1011/aa677f6c-8fbc-11e6-8e66-d4ae5296039d_wpd_65.jpg","http://dimg.spriteapp.cn/picture/2016/1011/aa677f6c-8fbc-11e6-8e66-d4ae5296039d_wpd_65.jpg"]
+     * thumbnail_small : ["http://wimg.spriteapp.cn/crop/150x150/picture/2016/1011/aa677f6c-8fbc-11e6-8e66-d4ae5296039d_wpd_65.jpg","http://dimg.spriteapp.cn/crop/150x150/picture/2016/1011/aa677f6c-8fbc-11e6-8e66-d4ae5296039d_wpd_65.jpg"]
+     */
+
+    private VideoBean video;
+    private String type;
+    private String id;
+    /**
+     * voicetime : 0
+     * status : 0
+     * cmt_type : text
+     * precid : 0
+     * content : 放屁的非致命性武器，有心脏病，高血压的人被击中必死无疑。
+     * like_count : 11
+     * u : {"header":["http://wimg.spriteapp.cn/profile/large/2016/04/07/57062b798862b_mini.jpg","http://dimg.spriteapp.cn/profile/large/2016/04/07/57062b798862b_mini.jpg"],"sex":"m","uid":"17365611","name":"瀧洺"}
+     * preuid : 0
+     * passtime : 2016-10-11 22:57:42
+     * voiceuri :
+     * id : 65989275
+     */
+
+    private List<TopCommentsBean> top_comments;
+    /**
+     * id : 18910
+     * name : hx
+     */
+
+    private List<TagsBean> tags;
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+
+    public String getBookmark() {
+        return bookmark;
+    }
+
+    public void setBookmark(String bookmark) {
+        this.bookmark = bookmark;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public String getUp() {
+        return up;
+    }
+
+    public void setUp(String up) {
+        this.up = up;
+    }
+
+    public String getShare_url() {
+        return share_url;
+    }
+
+    public void setShare_url(String share_url) {
+        this.share_url = share_url;
+    }
+
+    public int getDown() {
+        return down;
+    }
+
+    public void setDown(int down) {
+        this.down = down;
+    }
+
+    public int getForward() {
+        return forward;
+    }
+
+    public void setForward(int forward) {
+        this.forward = forward;
+    }
+
+    public UBean getU() {
+        return u;
+    }
+
+    public void setU(UBean u) {
+        this.u = u;
+    }
+
+    public String getPasstime() {
+        return passtime;
+    }
+
+    public void setPasstime(String passtime) {
+        this.passtime = passtime;
+    }
+
+    public VideoBean getVideo() {
+        return video;
+    }
+
+    public void setVideo(VideoBean video) {
+        this.video = video;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public List<TopCommentsBean> getTop_comments() {
+        return top_comments;
+    }
+
+    public void setTop_comments(List<TopCommentsBean> top_comments) {
+        this.top_comments = top_comments;
+    }
+
+    public List<TagsBean> getTags() {
+        return tags;
+    }
+
+    public void setTags(List<TagsBean> tags) {
+        this.tags = tags;
+    }
+
+    public static class UBean {
+        private boolean is_v;
+        private String uid;
+        private boolean is_vip;
+        private String name;
+        private List<String> header;
+
+        public boolean isIs_v() {
+            return is_v;
+        }
+
+        public void setIs_v(boolean is_v) {
+            this.is_v = is_v;
+        }
+
+        public String getUid() {
+            return uid;
+        }
+
+        public void setUid(String uid) {
+            this.uid = uid;
+        }
+
+        public boolean isIs_vip() {
+            return is_vip;
+        }
+
+        public void setIs_vip(boolean is_vip) {
+            this.is_vip = is_vip;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public List<String> getHeader() {
+            return header;
+        }
+
+        public void setHeader(List<String> header) {
+            this.header = header;
+        }
+
+        @Override
+        public String   toString() {
+            return "UBean{" +
+                    "is_v=" + is_v +
+                    ", uid='" + uid + '\'' +
+                    ", is_vip=" + is_vip +
+                    ", name='" + name + '\'' +
+                    ", header=" + header +
+                    '}';
+        }
+    }
+
+    public static class VideoBean {
+        private int playfcount;
+        private int height;
+        private int width;
+        private int duration;
+        private int playcount;
+        private List<String> video;
+        private List<String> download;
+        private List<String> thumbnail;
+        private List<String> thumbnail_small;
+
+        public int getPlayfcount() {
+            return playfcount;
+        }
+
+        public void setPlayfcount(int playfcount) {
+            this.playfcount = playfcount;
+        }
+
+        public int getHeight() {
+            return height;
+        }
+
+        public void setHeight(int height) {
+            this.height = height;
+        }
+
+        public int getWidth() {
+            return width;
+        }
+
+        public void setWidth(int width) {
+            this.width = width;
+        }
+
+        public int getDuration() {
+            return duration;
+        }
+
+        public void setDuration(int duration) {
+            this.duration = duration;
+        }
+
+        public int getPlaycount() {
+            return playcount;
+        }
+
+        public void setPlaycount(int playcount) {
+            this.playcount = playcount;
+        }
+
+        public List<String> getVideo() {
+            return video;
+        }
+
+        public void setVideo(List<String> video) {
+            this.video = video;
+        }
+
+        public List<String> getDownload() {
+            return download;
+        }
+
+        public void setDownload(List<String> download) {
+            this.download = download;
+        }
+
+        public List<String> getThumbnail() {
+            return thumbnail;
+        }
+
+        public void setThumbnail(List<String> thumbnail) {
+            this.thumbnail = thumbnail;
+        }
+
+        public List<String> getThumbnail_small() {
+            return thumbnail_small;
+        }
+
+        public void setThumbnail_small(List<String> thumbnail_small) {
+            this.thumbnail_small = thumbnail_small;
+        }
+    }
+
+    public static class TopCommentsBean {
+        private int voicetime;
+        private int status;
+        private String cmt_type;
+        private int precid;
+        private String content;
+        private int like_count;
+        /**
+         * header : ["http://wimg.spriteapp.cn/profile/large/2016/04/07/57062b798862b_mini.jpg","http://dimg.spriteapp.cn/profile/large/2016/04/07/57062b798862b_mini.jpg"]
+         * sex : m
+         * uid : 17365611
+         * name : 瀧洺
+         */
+
+        private UBean u;
+        private int preuid;
+        private String passtime;
+        private String voiceuri;
+        private int id;
+
+        public int getVoicetime() {
+            return voicetime;
+        }
+
+        public void setVoicetime(int voicetime) {
+            this.voicetime = voicetime;
+        }
+
+        public int getStatus() {
+            return status;
+        }
+
+        public void setStatus(int status) {
+            this.status = status;
+        }
+
+        public String getCmt_type() {
+            return cmt_type;
+        }
+
+        public void setCmt_type(String cmt_type) {
+            this.cmt_type = cmt_type;
+        }
+
+        public int getPrecid() {
+            return precid;
+        }
+
+        public void setPrecid(int precid) {
+            this.precid = precid;
+        }
+
+        public String getContent() {
+            return content;
+        }
+
+        public void setContent(String content) {
+            this.content = content;
+        }
+
+        public int getLike_count() {
+            return like_count;
+        }
+
+        public void setLike_count(int like_count) {
+            this.like_count = like_count;
+        }
+
+        public UBean getU() {
+            return u;
+        }
+
+        public void setU(UBean u) {
+            this.u = u;
+        }
+
+        public int getPreuid() {
+            return preuid;
+        }
+
+        public void setPreuid(int preuid) {
+            this.preuid = preuid;
+        }
+
+        public String getPasstime() {
+            return passtime;
+        }
+
+        public void setPasstime(String passtime) {
+            this.passtime = passtime;
+        }
+
+        public String getVoiceuri() {
+            return voiceuri;
+        }
+
+        public void setVoiceuri(String voiceuri) {
+            this.voiceuri = voiceuri;
+        }
+
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public static class UBean {
+            private String sex;
+            private String uid;
+            private String name;
+            private List<String> header;
+
+            public String getSex() {
+                return sex;
+            }
+
+            public void setSex(String sex) {
+                this.sex = sex;
+            }
+
+            public String getUid() {
+                return uid;
+            }
+
+            public void setUid(String uid) {
+                this.uid = uid;
+            }
+
+            public String getName() {
+                return name;
+            }
+
+            public void setName(String name) {
+                this.name = name;
+            }
+
+            public List<String> getHeader() {
+                return header;
+            }
+
+            public void setHeader(List<String> header) {
+                this.header = header;
+            }
+        }
+    }
+
+    public static class TagsBean {
+        private int id;
+        private String name;
+
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "BaiSiBean{" +
+                "status=" + status +
+                ", comment='" + comment + '\'' +
+                ", bookmark='" + bookmark + '\'' +
+                ", text='" + text + '\'' +
+                ", up='" + up + '\'' +
+                ", share_url='" + share_url + '\'' +
+                ", down=" + down +
+                ", forward=" + forward +
+                ", u=" + u +
+                ", passtime='" + passtime + '\'' +
+                ", video=" + video +
+                ", type='" + type + '\'' +
+                ", id='" + id + '\'' +
+                ", top_comments=" + top_comments +
+                ", tags=" + tags +
+                '}';
+    }
+}

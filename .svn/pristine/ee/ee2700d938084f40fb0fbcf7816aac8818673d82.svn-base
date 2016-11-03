@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\fragmentation_swipeback\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\shadow_bottom.png",
+        "source": "D:\\as_workspace\\MyMediaer\\fragmentation_swipeback\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\shadow_bottom.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\fragmentation_swipeback\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\shadow_left.png",
+        "source": "D:\\as_workspace\\MyMediaer\\fragmentation_swipeback\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\shadow_left.png"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyMediaer\\fragmentation_swipeback\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\shadow_right.png",
+        "source": "D:\\as_workspace\\MyMediaer\\fragmentation_swipeback\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\shadow_right.png"
+    }
+]
